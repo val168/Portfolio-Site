@@ -9,7 +9,7 @@ const portfolioData = {
   occupation: "Undergraduate Cybersecurity Student",
   location: "Paris, France",
   intro:
-    "I am an undergraduate cybersecurity student at ESIEA with a strong foundation in systems programming, low-level architecture, automation, and independent software products.",
+    "I am an undergraduate cybersecurity student with a strong foundation in systems programming, low-level architecture, automation, and independent software products.",
   about:
     "I work at the intersection of low-level systems, automation, and pragmatic product development. My focus is on high-performance utilities, privacy-centric computing, Windows-to-Linux migration, and building independent SaaS products from idea to deployment. I enjoy technical projects that require both architecture and execution: kernel-adjacent configuration, computer vision pipelines, hardware integration, GUI tooling, and clean front-end presentation.",
   skills: [
