@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Systems & Cybersecurity Student</title>
+    <meta
+      name="description"
+      content="A clean dark portfolio for a cybersecurity student focused on systems programming, automation, privacy-centric computing, and SaaS development."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">YN</span>
+        <span class="brand-text" data-field="name">Your Name</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content reveal">
+          <p class="eyebrow">home</p>
+          <h1 data-field="greeting">hi valentin here.</h1>
+          <p class="tagline" data-field="tagline">
+            Cybersecurity student focused on systems, automation & SaaS.
+          </p>
+
+          <div class="quick-facts" aria-label="Personal information">
+            <span><strong>Age</strong><span data-field="age">Your age</span></span>
+            <span>
+              <strong>Occupation</strong>
+              <span data-field="occupation">Undergraduate Cybersecurity Student at ESIEA</span>
+            </span>
+            <span>
+              <strong>Based in</strong>
+              <span data-field="location">Your location</span>
+            </span>
+          </div>
+
+          <p class="intro" data-field="intro">
+            I am an undergraduate cybersecurity student at ESIEA with a strong
+            foundation in systems programming, low-level architecture,
+            automation, and independent software products.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Featured Projects</a>
+            <a class="button secondary" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Profile artwork">
+          <img
+            src="assets/profile-art.jpg"
+            alt="Black and white profile artwork"
+            width="1024"
+            height="1024"
+          />
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">about</p>
+          <h2>Systems-minded and product focused.</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-copy reveal" data-field="about">
+            I work at the intersection of low-level systems, automation, and
+            pragmatic product development. My focus is on high-performance
+            utilities, privacy-centric computing, Windows-to-Linux migration,
+            and building independent SaaS products from idea to deployment.
+          </p>
+          <div class="skill-strip reveal" id="skill-list" aria-label="Current skills"></div>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="section-heading reveal">
+          <p class="eyebrow">technical stack</p>
+          <h2>Low-level systems, automation, and product development.</h2>
+        </div>
+        <div class="card-grid" id="stack-list"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">featured projects</p>
+          <h2>Practical work across systems and software products.</h2>
+        </div>
+        <div class="card-grid" id="project-list"></div>
+      </section>
+
+      <section class="section" id="notes">
+        <div class="section-heading reveal">
+          <p class="eyebrow">recent notes</p>
+          <h2>What I am exploring now.</h2>
+        </div>
+        <div class="note-list" id="note-list"></div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="eyebrow">contact</p>
+            <h2>Let&apos;s connect.</h2>
+            <p>
+              I am interested in internships, technical collaborations,
+              cross-border partnerships, and projects that push system
+              performance, automation, and privacy-centric software.
+            </p>
+          </div>
+          <div class="contact-links" id="contact-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span data-field="name">Your Name</span>
+        <span>&copy; <span id="current-year"></span></span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
