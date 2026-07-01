@@ -6,8 +6,8 @@ const portfolioData = {
   greeting: "hi valentin here.",
   tagline: "Cybersecurity student focused on systems, automation & SaaS.",
   age: "18",
-  occupation: "Undergraduate Cybersecurity Student at ESIEA",
-  location: "Ivry-sur-Seine / Paris, France",
+  occupation: "Undergraduate Cybersecurity Student",
+  location: "Paris, France",
   intro:
     "I am an undergraduate cybersecurity student at ESIEA with a strong foundation in systems programming, low-level architecture, automation, and independent software products.",
   about:
@@ -71,20 +71,20 @@ const portfolioData = {
   // Replace placeholder links when public repositories or demos are ready.
   projects: [
     {
-      name: "Systems Instrumentation & Memory Analysis",
+      name: "ProcLens",
       description:
-        "Development of high-performance tools for real-time process memory reading and synchronized overlays, utilizing kernel-mode awareness to ensure minimal footprint and maximum efficiency.",
-      technologies: ["C++", "Windows Internals", "Memory Analysis", "Overlay Systems"],
-      link: "",
-      linkLabel: "Private project",
+        "A Windows process inspection tool that reads live process metadata, loaded modules, memory regions, and handle information through documented Win32 and NT APIs. I built it to understand how user-mode tooling maps system internals without relying on heavyweight debuggers.",
+      technologies: ["C++", "Windows Internals", "Win32 API", "Memory Mapping"],
+      link: "https://github.com/val168/ProcLens",
+      linkLabel: "View repository",
     },
     {
-      name: "Automation Architecture",
+      name: "TraceForge",
       description:
-        "Designing robust, AI-driven automation systems capable of high-fidelity environmental analysis and rapid input execution, focused on maximizing precision in complex, high-speed task environments.",
-      technologies: ["Python", "OpenCV", "ONNX", "Input Systems"],
-      link: "",
-      linkLabel: "Private project",
+        "A planned desktop tool for collecting, parsing, and visualizing system activity traces from Windows and Linux machines. The project is designed around a Python ingestion pipeline, a PyQt timeline interface, and lightweight C/C++ helpers for process, file, and network event collection.",
+      technologies: ["Python", "C++", "PyQt", "Windows Internals", "Linux"],
+      link: "https://github.com/val168/traceforge",
+      linkLabel: "View repository",
     },
   ],
   notes: [
