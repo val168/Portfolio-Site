@@ -111,7 +111,7 @@ const portfolioData = {
   contact: [
     { label: "Email", value: "husak.valentin@gmail.com", href: "mailto:husak.valentin@gmail.com" },
     { label: "GitHub", value: "github.com/val168", href: "https://github.com/val168" },
-    { label: "LinkedIn", value: "linkedin.com/in/yourusername", href: "https://linkedin.com/in/yourusername" },
+    { label: "LinkedIn", value: "linkedin.com/in/valentinhusak", href: "https://www.linkedin.com/in/valentin-husak-4112b139a/" },
   ],
 };
 
