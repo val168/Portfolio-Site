@@ -4,14 +4,14 @@ const portfolioData = {
   name: "HUSAK VALENTIN",
   initials: "HV",
   greeting: "hi valentin here.",
-  tagline: "Cybersecurity student focused on systems, automation & SaaS.",
+  tagline: "Cybersecurity student building low-level tools and desktop apps.",
   age: "18",
   occupation: "Undergraduate Cybersecurity Student",
   location: "Paris, France",
   intro:
-    "I am an undergraduate cybersecurity student with a strong foundation in systems programming, low-level architecture, automation, and independent software products.",
+    "I study cybersecurity and build small tools in C, C++, Python, and PyQt. My main interests are Windows internals, Linux, automation, and practical desktop software.",
   about:
-    "I work at the intersection of low-level systems, automation, and pragmatic product development. My focus is on high-performance utilities, privacy-centric computing, Windows-to-Linux migration, and building independent SaaS products from idea to deployment. I enjoy technical projects that require both architecture and execution: kernel-adjacent configuration, computer vision pipelines, hardware integration, GUI tooling, and clean front-end presentation.",
+    "I focus on practical projects that help me understand operating systems, tooling, and software design. I try to keep my projects scoped, readable, and useful.",
   skills: [
     "C",
     "C++",
@@ -29,26 +29,26 @@ const portfolioData = {
   stack: [
     {
       role: "Languages",
-      company: "Systems and automation programming",
+      company: "C, C++, and Python",
       date: "Core",
       description:
-        "Comfortable building technical utilities and prototypes in C, C++, and Python, with attention to performance, maintainability, and deployment constraints.",
+        "I use C and C++ for lower-level utilities, and Python for scripts, prototypes, and tooling.",
       skills: ["C", "C++", "Python"],
     },
     {
-      role: "Systems",
-      company: "Windows, Linux, and kernel-adjacent configuration",
+      role: "Operating Systems",
+      company: "Windows and Linux",
       date: "Focus",
       description:
-        "Strong interest in Windows/Linux kernel interactions, driver-level configuration, and practical migration from Windows environments to CachyOS and Arch-based systems.",
+        "I am learning how Windows and Linux handle processes, files, drivers, and networking. I also use Arch-based Linux setups for my own workflow.",
       skills: ["Windows", "Linux", "Drivers", "CachyOS", "Arch"],
     },
     {
-      role: "Automation & Instrumentation",
-      company: "Computer vision and AI-assisted tooling",
+      role: "Automation",
+      company: "Computer vision and local AI",
       date: "Applied",
       description:
-        "Developing high-performance automation concepts using input emulation, computer vision, and local AI inference in controlled lab environments.",
+        "I use OpenCV and ONNX for local detection, small analysis pipelines, and automation experiments.",
       skills: ["OpenCV", "ONNX", "Input Emulation", "Optimization"],
     },
     {
@@ -56,15 +56,15 @@ const portfolioData = {
       company: "Microcontroller integration",
       date: "Hands-on",
       description:
-        "Experience integrating Raspberry Pi microcontrollers for low-level peripheral, networking, and experimentation projects.",
+        "I use hardware projects mainly to learn electronics, serial communication, and basic debugging.",
       skills: ["Raspberry Pi", "Firmware", "Networking", "Peripherals"],
     },
     {
       role: "Application Development",
-      company: "GUI tools and independent SaaS",
+      company: "Desktop tools and small products",
       date: "Product",
       description:
-        "Building desktop utilities and micro-SaaS products, from GUI design and executable compilation to payment integration and architectural planning.",
+        "I build small desktop tools with PyQt and pay attention to packaging, layout, and usability.",
       skills: ["PyQt", "Qt", "Executables", "Stripe"],
     },
   ],
@@ -73,7 +73,7 @@ const portfolioData = {
     {
       name: "ProcLens",
       description:
-        "A Windows process inspection tool that reads live process metadata, loaded modules, memory regions, and handle information through documented Win32 and NT APIs. I built it to understand how user-mode tooling maps system internals without relying on heavyweight debuggers.",
+        "A Windows process inspection tool that shows live process data, loaded modules, memory regions, and handles using Win32 and NT APIs. The goal is to make low-level process information easier to inspect from a small user-mode tool.",
       technologies: ["C++", "Windows Internals", "Win32 API", "Memory Mapping"],
       link: "https://github.com/val168/ProcLens",
       linkLabel: "View repository",
@@ -81,7 +81,7 @@ const portfolioData = {
     {
       name: "TraceForge",
       description:
-        "A planned desktop tool for collecting, parsing, and visualizing system activity traces from Windows and Linux machines. The project is designed around a Python ingestion pipeline, a PyQt timeline interface, and lightweight C/C++ helpers for process, file, and network event collection.",
+        "A planned desktop app for collecting and viewing activity traces from Windows and Linux. It would combine a Python parser, a PyQt timeline view, and small C/C++ helpers for process, file, and network events.",
       technologies: ["Python", "C++", "PyQt", "Windows Internals", "Linux"],
       link: "https://github.com/val168/traceforge",
       linkLabel: "View repository",
@@ -91,20 +91,20 @@ const portfolioData = {
     {
       title: "Windows-to-Linux migration",
       description:
-        "Documenting the practical tradeoffs of moving daily workflows toward CachyOS and Arch-based environments.",
-      meta: "systems / privacy / performance",
+        "Notes from moving more of my daily workflow to Arch-based Linux.",
+      meta: "linux / privacy",
     },
     {
       title: "Local AI for automation",
       description:
-        "Testing how OpenCV and ONNX inference can make technical tools faster, more reliable, and less dependent on cloud services.",
+        "Small OpenCV and ONNX experiments that run locally instead of using an online API.",
       meta: "automation / ai inference",
     },
     {
-      title: "Indie SaaS architecture",
+      title: "Small software products",
       description:
-        "Planning small utility products with payment integration, clean deployment paths, and realistic maintenance costs.",
-      meta: "micro-saas / product",
+        "Planning small utility products with a clear use case, simple pricing, and low maintenance.",
+      meta: "saas / product",
     },
   ],
   // Replace these with your real contact links.
