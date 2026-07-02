@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows-to-Linux Migration | Husak Valentin</title>
+    <meta
+      name="description"
+      content="Notes about moving parts of a real daily workflow from Windows to Arch-based Linux."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Article navigation">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#notes">Articles</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article-main">
+      <article>
+        <a class="back-link" href="../index.html#notes">Back to articles</a>
+        <header class="article-header">
+          <p class="eyebrow">article</p>
+          <h1>Windows-to-Linux migration</h1>
+          <p class="article-meta">linux / privacy / performance</p>
+        </header>
+
+        <div class="article-content">
+          <p>
+            Windows-to-Linux migration started for me less like a clean switch
+            and more like a long series of practical problems I had to solve one
+            by one. I was not just installing a distribution to try Linux. I was
+            trying to move parts of my real daily workflow away from Windows 11
+            and onto an Arch-based setup, mainly CachyOS, while still keeping
+            access to the software and games I needed.
+          </p>
+          <p>
+            The first major lesson was that dual booting is not just about
+            having two operating systems on one drive. It means understanding
+            EFI partitions, bootloaders, disk layouts, encrypted Linux
+            partitions, Windows installers, and how fragile the boot process can
+            become when one system assumes it owns the machine.
+          </p>
+          <p>
+            I ran into problems around Windows installation media, UEFI boot
+            behavior, and bootloader recovery, including cases where Linux
+            partitions appeared as unknown from Windows and the boot process had
+            to be repaired manually. Those situations were frustrating, but they
+            taught me more about storage, firmware, and boot chains than a
+            normal installation guide would have.
+          </p>
+          <p>
+            The second part of the migration was daily usability. Running Linux
+            on modern laptop hardware with an NVIDIA GPU, Wayland, COSMIC,
+            high-refresh-rate monitors, Wine, Winello, Steam, Flatpak packages,
+            and system packages created a constant stream of compatibility
+            questions.
+          </p>
+          <p>
+            Some problems were simple package-management issues. Others were
+            more subtle, like input latency in osu!, session-type limitations,
+            or differences between running software through a compatibility
+            layer and running it natively.
+          </p>
+          <p>
+            What made the migration valuable was that it forced me to become
+            comfortable with the layers between user software and the operating
+            system. Instead of treating the OS as a black box, I had to learn
+            how graphics sessions, drivers, filesystems, bootloaders, package
+            managers, and compatibility tools interact.
+          </p>
+          <p>
+            I still use Windows where it makes sense, but Linux became more than
+            an alternative desktop. It became a learning environment where every
+            broken piece of workflow was also an opportunity to understand the
+            machine better.
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

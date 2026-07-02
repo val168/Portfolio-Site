@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local AI for Automation | Husak Valentin</title>
+    <meta
+      name="description"
+      content="Notes about local OpenCV and ONNX automation experiments."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Article navigation">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#notes">Articles</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article-main">
+      <article>
+        <a class="back-link" href="../index.html#notes">Back to articles</a>
+        <header class="article-header">
+          <p class="eyebrow">article</p>
+          <h1>Local AI for automation</h1>
+          <p class="article-meta">automation / ai inference</p>
+        </header>
+
+        <div class="article-content">
+          <p>
+            My interest in local AI for automation came from wanting models to
+            run on my own machine instead of depending on an online API. One
+            clear example was a computer-vision automation project built around
+            an ONNX YOLOv8 model.
+          </p>
+          <p>
+            The goal was not just to write a simple script that clicked fixed
+            coordinates. I wanted a system that could visually understand what
+            was happening on screen: UI states, icons, confirmation prompts,
+            menu elements, and interaction targets.
+          </p>
+          <p>
+            The first challenge was defining what the model actually needed to
+            detect. For a human, recognizing an icon or a button is instant. For
+            a model, every object has to become a class with consistent labels
+            and enough examples.
+          </p>
+          <p>
+            I had to think about screenshots, bounding boxes, class definitions,
+            confidence thresholds, false positives, false negatives, and how
+            visual elements can change depending on resolution, scaling,
+            animations, effects, or background clutter.
+          </p>
+          <p>
+            OpenCV handled the frame-processing side: capturing the screen,
+            preparing images, filtering regions, and passing the right input
+            into the model. ONNX made the inference portable and local, which
+            meant the project did not need to send screenshots or visual data to
+            a cloud service.
+          </p>
+          <p>
+            Running everything locally also made the limitations obvious. Local
+            inference has to respect hardware constraints: GPU memory, model
+            size, inference speed, accuracy, and stability. A model that works
+            well in a notebook is not automatically useful in a real-time loop.
+          </p>
+          <p>
+            This changed how I think about AI automation. The model matters, but
+            the surrounding software matters just as much: preprocessing,
+            timing, decision logic, fallback behavior, logging, and debugging
+            tools. Running AI locally is also about owning the pipeline and
+            understanding its constraints.
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

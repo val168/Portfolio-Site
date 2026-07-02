@@ -93,18 +93,21 @@ const portfolioData = {
       description:
         "Notes from moving more of my daily workflow to Arch-based Linux.",
       meta: "linux / privacy",
+      href: "articles/windows-to-linux-migration.html",
     },
     {
       title: "Local AI for automation",
       description:
         "Small OpenCV and ONNX experiments that run locally instead of using an online API.",
       meta: "automation / ai inference",
+      href: "articles/local-ai-for-automation.html",
     },
     {
       title: "Small software products",
       description:
         "Planning small utility products with a clear use case, simple pricing, and low maintenance.",
       meta: "saas / product",
+      href: "articles/small-software-products.html",
     },
   ],
   // Replace these with your real contact links.
@@ -191,13 +194,13 @@ projectList.innerHTML = portfolioData.projects
 noteList.innerHTML = portfolioData.notes
   .map(
     (note) => `
-      <article class="note-item reveal">
+      <a class="note-item reveal" href="${note.href}">
         <div>
           <h3>${note.title}</h3>
           <p>${note.description}</p>
         </div>
         <span>${note.meta}</span>
-      </article>
+      </a>
     `
   )
   .join("");

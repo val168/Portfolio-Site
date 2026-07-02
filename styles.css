@@ -496,6 +496,12 @@ h3 {
   gap: 1rem;
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.95rem;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.note-item:hover {
+  border-color: rgba(56, 213, 232, 0.48);
+  transform: translateX(3px);
 }
 
 .note-item h3 {
@@ -512,6 +518,51 @@ h3 {
   font-size: 0.78rem;
   font-weight: 700;
   text-align: right;
+}
+
+.article-main {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.article-header {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.4rem;
+}
+
+.article-header h1 {
+  max-width: 14ch;
+  margin-top: 0.6rem;
+}
+
+.article-meta {
+  margin: 1rem 0 0;
+  color: var(--subtle);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.article-content {
+  display: grid;
+  gap: 1.1rem;
+  padding-top: 1.6rem;
+}
+
+.article-content p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-weight: 750;
+}
+
+.back-link::before {
+  content: "<- ";
 }
 
 .site-footer {
